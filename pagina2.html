@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 2</title>
+  <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a la página 2</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Página principal</a></li>
+      </ul>
+      <ul>
+        <li><a href="pagina3.html">Página principal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Contenido principal</h2>
+    <p>En esta página encontrarás un diseño aún más elaborado que en la página principal.</p>
+    <p>¡Disfruta de la experiencia de navegar en nuestra página web!</p>
+<label for="nombre">Ingresa tu nombre:</label>
+<input type="text" id="nombre">
+<button id="boton-bienvenida">Mostrar bienvenida</button>
+<p id="mensaje-bienvenida"></p>
+
+<script>
+  // función para mostrar un mensaje de bienvenida personalizado
+  function mostrarBienvenida() {
+    var nombre = document.getElementById("nombre").value;
+    var mensaje = "¡Bienvenido " + nombre + "!";
+    document.getElementById("mensaje-bienvenida").textContent = mensaje;
+  }
+  
+  // evento de clic en el botón "Mostrar bienvenida"
+  var botonBienvenida = document.getElementById("boton-bienvenida");
+  botonBienvenida.addEventListener("click", mostrarBienvenida);
+</script>
+ </section>
+  <footer>
+    <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
